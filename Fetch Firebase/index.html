@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Chatbot with Firebase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="show-chatbot">
+      <header>
+        <h2>Knowledge Management Tool</h2>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there &#x1F36C;<br />How can I help you today?</p>
+        </li>
+      </ul>
+    </div>
+    <div class="chat-input">
+      <div class="input-container">
+        <textarea class="user-input" placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <button id="getbtn" class="material-symbols-rounded">send</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
